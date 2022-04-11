@@ -1,0 +1,683 @@
+body {
+    background-color: rgb(43, 43, 43);
+    font-family:sans-serif;
+    margin:0px;
+}
+#mainbackground {
+    background-image: url("Images/mainpagebackground.jpg");
+    background-size: cover;
+    font-family:sans-serif;
+    margin:0px;
+}
+
+div#header{
+    background-color: rgb(48, 115, 182);
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    z-index: 999;
+}
+
+div#footer{
+    background-color: rgb(48, 115, 182);
+    position: fixed;
+    width: 100%;
+    height: 63px;
+    top: 910px;
+    z-index: 999;
+}
+
+.total{
+    float:right;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    color: papayawhip;
+    padding-top: 0.8%;
+    padding-right: 3%;
+    font-weight: bold;
+}
+.checkout{
+    float:right;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    text-decoration: none;
+    padding: 0.7em;
+    color: papayawhip;
+    border:none;
+    background-color: rgb(48, 115, 182);
+    font-weight: bold;
+}
+.storename{
+    font-family: 'Trebuchet MS';
+    text-decoration: none;
+    font-size: 48px;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.logo img{
+    padding-left: 2.5em;
+    margin-top: 17px;
+}
+
+.logout{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.order{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.profile{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.editprofileinfo{
+    margin-left:15%;
+    margin-bottom: 3%;
+    
+}
+
+.cart{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.login{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.wish{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.prod{
+    float:right;
+    text-decoration: none;
+    padding: 2.35em;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.profile:hover, .wish:hover,.cart:hover, .prod:hover, .login:hover, .logout:hover, .checkout:hover, .order:hover {
+    background-color: rgba(3, 0, 185, 0.8);
+}
+
+.productpic{
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    object-position: left bottom;
+    width: 70%;
+}
+
+.productlist{
+    padding-bottom: 10px;
+    outline:rgb(48, 115, 182) solid 4px;
+    /* background-color: rgb(48, 115, 182); */
+    border-radius: 25px;
+    outline-offset: 15px;
+    /* width: 700px;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 30px 60px;
+}
+div#recommend{
+    margin-bottom: 15px;
+    margin-right: auto;
+}
+.recommend{
+    display: block;
+    margin-top: 15px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 90%;
+    height: 90%; */
+}
+
+.newarrived{
+    text-align: center;
+    background-color: rgb(48, 115, 182);
+    color: papayawhip;
+    background-size: 300px 100px;
+}
+.textbox{
+    margin-left:100px;
+    margin-bottom: 30px;
+}
+.bestselling{
+    font-family: 'Trebuchet MS';
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    margin-top:3em;
+    margin-bottom:1em;	
+    padding-left: 1em;
+    border-bottom:2px dotted rgb(48, 115, 182);
+    color: papayawhip;
+}
+.spacing-table{
+    border-collapse:separate;
+    border-spacing:0 15px;
+    
+}
+.product_main{
+    content: "";
+    padding-top: 50px;
+    display: flex;
+    clear: both;
+}
+
+div#pic{
+    float: left;
+    /* width: 50%; */
+}
+
+.product_main_left{
+    margin-top:4%;
+    /* float: left; */
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.product_main_right{   
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+
+}
+
+div#body{
+    width: 700px;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 500px;
+    background: rgb(32, 32, 32);
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 10px 30px;
+}
+
+div#body label{
+    font-family: 'Trebuchet MS';
+    display: block;
+    text-align:right;
+    /* align-items: center;
+    justify-content: center; */
+    font-weight: bold;
+    font-size:20px;
+    width: 200px;
+    float: left;
+    /* margin-right: 10px; */
+}
+div#summarybody{
+    width: 700px;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    min-height: 500px;
+    background: rgb(32, 32, 32);
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 10px 30px;
+}
+div#summarybody label{
+    font-family: 'Trebuchet MS';
+    display: block;
+    /* text-align:right; */
+    /* align-items: center;
+    justify-content: center; */
+    font-weight: bold;
+    font-size:20px;
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+div#body input {
+    padding: 8px 4px;
+    margin: 2px 2px 10px 10px;
+}
+div#mainpagebody{
+    
+    width: 700px;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 750px;
+    background: rgba(32, 32, 32, 0.925);
+    /* display: flex; */
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 30px 60px;
+}
+h1{
+    font-family: 'Trebuchet MS';
+    margin-top:0.4em;
+    margin-bottom:0.4em;	
+    padding-left: 1em;
+    border-bottom:2px dotted rgb(48, 115, 182);
+    color: papayawhip;
+
+}
+
+.summarytext{
+    margin-left:100px;
+}
+
+div#subbody{
+    margin-top: 5%;
+    /* margin-left:8%; */
+    margin-bottom: 5%;
+    color: papayawhip;
+}
+
+div#product_name{
+    color: papayawhip;
+    margin-top:3%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    text-align:center;
+}
+
+div#price{
+    color: papayawhip;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.mycart{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 18%;
+    margin-top: 70px;
+    color: papayawhip;
+}
+
+.description{
+    font-size: large;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prodlist{
+    /* margin-top: 40px; */
+    margin-left: 300px;  
+    margin-right: 300px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: papayawhip;
+}
+
+.summaryprodlist{
+    margin-left: auto;  
+    /* margin-right: 10%; */
+    text-align: center;
+}
+.summaryname{
+    font-size:15px;
+}
+.sumtotal{
+    margin-top:2%;
+    margin-left:65%;
+    margin-bottom: 3%;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size:20px;
+}
+.proddetail{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 200px; 
+}
+
+.btnmore{
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width:100%;
+    border: none;
+    background-color: rgb(48, 115, 182);
+    border-radius: 25px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: papayawhip;
+    font-weight: bold;
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(48, 115, 182);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.tomainpagebtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(48, 115, 182);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgba(3, 0, 185, 0.8);
+}
+
+.btnmore:hover {
+    background-color: rgba(3, 0, 185, 0.8);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+}
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 25px 25px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 25px 0 0 25px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  /************************/
+
+  /*Login page*/
+
+.Loginbox{
+  display: block;
+  background-color: lightgrey;
+  text-align: center;
+  border: 1px solid black;
+  position:relative;
+  margin:auto;
+  width: 500px;
+  padding: 10%;
+}
+.loginEmail{
+  text-align: left;
+}
+
+  /******************************/
+  /* Login and Register */
+
+  .container {
+    /* float: center; */
+    width: 400px;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 400px;
+    background: rgba(32, 32, 32, 0.925);
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 100px 70px;
+}
+
+.container .login-text {
+    color: papayawhip;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+.container .login-social a i {
+    margin-right: 5px;
+}
+
+.container .login-social a.facebook {
+    background: #4267B2;
+}
+
+.container .login-social a.twitter {
+    background: #1DA1F2;
+}
+
+.container .login-social a.google-plus {
+    background: #db4a39;
+}
+
+.container .login-social a.linkedin {
+    background: #0e76a8;
+}
+
+.container .login-social a.facebook:hover {
+    background: #3d5fa3;
+}
+
+.container .login-social a.twitter:hover {
+    background: #1991db;
+}
+
+.container .login-social a.google-plus:hover {
+    background: #ca4334;
+}
+
+.container .login-social a.linkedin:hover {
+    background: #0b5c81;
+}
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: rgb(48, 115, 182);
+}
+
+.container .login-email .input-group .btn {
+    display: block;
+    width: 70%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: rgb(48, 115, 182);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn .btnmore:hover {
+    transform: translateY(-5px);
+    background: rgba(3, 0, 185, 0.8);
+}
+
+.login-register-text {
+    color: papayawhip;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: rgb(48, 115, 182);
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
+}
+
+  /**********************/
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
