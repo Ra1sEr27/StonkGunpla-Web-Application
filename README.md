@@ -1,6 +1,6 @@
 # StonkGunpla-Web-Application
-  -An online robot model shop that provided shopping features e.g.login, account registration, add to wishlist, add to cart, checkout. phpMyAdmin is used as a database for storing the product information, user information, order information, and wishlist information. 
-  A website is used as front-end, which allows the customer to check the availability of products by themselves. The website will also have an interface for admin to manage the website e.g. update the availability of products, add new products.
+  -An online robot model shop that provided shopping features e.g. login, account registration, add to wishlist, add to cart, checkout. phpMyAdmin is used as a database for storing the product information, user information, order information, and wishlist information. 
+  A website is used as front-end, which allows the customer to check the availability of products by themselves. The website also have an interface for admin to manage the website e.g. update the availability of products, add new products.
   - User Interface
      - Main page
      
